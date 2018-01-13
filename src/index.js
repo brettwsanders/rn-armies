@@ -1,15 +1,15 @@
-import React from 'react'
-import { render } from 'react-dom'
-import { Provider } from 'react-redux'
-import { createStore } from 'redux'
-import toDoApp from './reducers'
-import App from './components/App'
+import React from 'react';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import cryptoApp from './reducers';
+import App from './App';
 
-let store = createStore(toDoApp)
+let store = createStore(cryptoApp);
 
 render(
   <Provider store={store}>
     <App />
   </Provider>,
   document.getElementById('root')
-)
+);
