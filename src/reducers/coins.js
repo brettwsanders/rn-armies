@@ -1,5 +1,5 @@
 import { coins } from "../constants/coins";
-import { getRandomPrice, getRandomSupply } from "../helpers/coins";
+import { getRandomPrice, getRandomSupply } from "../helpers/randoms";
 
 const getInitialState = () => {
     return coins.reduce((state, coin) => {
